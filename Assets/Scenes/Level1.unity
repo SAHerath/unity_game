@@ -239,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1658460978237467174, guid: f158aa2be3df6489185ef721f6fd79c1,
         type: 3}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 43671498}
   - component: {fileID: 43671497}
   m_Layer: 0
-  m_Name: Star (24)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ GameObject:
   - component: {fileID: 122020772}
   - component: {fileID: 122020771}
   m_Layer: 0
-  m_Name: Star (4)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 130113627}
   - component: {fileID: 130113626}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 220494650}
   - component: {fileID: 220494649}
   m_Layer: 0
-  m_Name: Star (13)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1483,7 +1483,7 @@ GameObject:
   - component: {fileID: 313868697}
   - component: {fileID: 313868696}
   m_Layer: 0
-  m_Name: Star (29)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1642,7 +1642,7 @@ GameObject:
   - component: {fileID: 315952829}
   - component: {fileID: 315952828}
   m_Layer: 0
-  m_Name: Star (1)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2498,7 +2498,7 @@ GameObject:
   - component: {fileID: 374641249}
   - component: {fileID: 374641248}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2713,7 +2713,7 @@ GameObject:
   - component: {fileID: 424361269}
   - component: {fileID: 424361268}
   m_Layer: 0
-  m_Name: Star (21)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2963,7 +2963,7 @@ GameObject:
   m_Layer: 0
   m_Name: VictoryZone
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -2994,6 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b7b8893929d4d9094f6655d580fae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneBuildIndex: 0
 --- !u!61 &480004329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3052,7 +3053,7 @@ GameObject:
   - component: {fileID: 510758102}
   - component: {fileID: 510758101}
   m_Layer: 0
-  m_Name: Star (26)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3321,7 +3322,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.08, y: -1.62, z: -9}
+  m_LocalPosition: {x: 100, y: -1.62, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3419,6 +3420,10 @@ Transform:
   m_Children:
   - {fileID: 901468409}
   - {fileID: 1060736553}
+  - {fileID: 1156691285}
+  - {fileID: 1822295818}
+  - {fileID: 563308431}
+  - {fileID: 2129700967}
   m_Father: {fileID: 760643912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556815491
@@ -3468,7 +3473,7 @@ GameObject:
   - component: {fileID: 563308431}
   - component: {fileID: 563308430}
   m_Layer: 0
-  m_Name: water (2)
+  m_Name: well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3534,12 +3539,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563308429}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.61, y: -8.84, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 51.559998, y: -10.197412, z: -0.9270307}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541160327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606909371
 GameObject:
@@ -3554,7 +3559,7 @@ GameObject:
   - component: {fileID: 606909374}
   - component: {fileID: 606909373}
   m_Layer: 0
-  m_Name: Star (9)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3713,7 +3718,7 @@ GameObject:
   - component: {fileID: 637169377}
   - component: {fileID: 637169376}
   m_Layer: 0
-  m_Name: Star (32)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3918,7 +3923,7 @@ GameObject:
   - component: {fileID: 705617129}
   - component: {fileID: 705617128}
   m_Layer: 0
-  m_Name: Star (6)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4077,7 +4082,7 @@ GameObject:
   - component: {fileID: 708038333}
   - component: {fileID: 708038332}
   m_Layer: 0
-  m_Name: Star (34)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4236,7 +4241,7 @@ GameObject:
   - component: {fileID: 710169498}
   - component: {fileID: 710169497}
   m_Layer: 0
-  m_Name: Star (28)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4395,7 +4400,7 @@ GameObject:
   - component: {fileID: 711308368}
   - component: {fileID: 711308367}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4822,7 +4827,7 @@ GameObject:
   - component: {fileID: 806881159}
   - component: {fileID: 806881158}
   m_Layer: 0
-  m_Name: Star (18)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4981,7 +4986,7 @@ GameObject:
   - component: {fileID: 823109317}
   - component: {fileID: 823109316}
   m_Layer: 0
-  m_Name: Star (30)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5181,7 +5186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.08
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4520396350849616, guid: 7d60c822c3f1b408ea7a00ecdb5e047a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5311,7 +5316,7 @@ GameObject:
   - component: {fileID: 901468409}
   - component: {fileID: 901468408}
   m_Layer: 0
-  m_Name: 1444364
+  m_Name: castle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5500,7 +5505,7 @@ GameObject:
   - component: {fileID: 955546215}
   - component: {fileID: 955546214}
   m_Layer: 0
-  m_Name: Star (14)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5659,7 +5664,7 @@ GameObject:
   - component: {fileID: 1013344497}
   - component: {fileID: 1013344496}
   m_Layer: 0
-  m_Name: Star (33)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5818,7 +5823,7 @@ GameObject:
   - component: {fileID: 1039789788}
   - component: {fileID: 1039789787}
   m_Layer: 0
-  m_Name: Star (3)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5975,7 +5980,7 @@ GameObject:
   - component: {fileID: 1060736553}
   - component: {fileID: 1060736554}
   m_Layer: 0
-  m_Name: water
+  m_Name: well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6176,7 +6181,7 @@ GameObject:
   - component: {fileID: 1110877000}
   - component: {fileID: 1110876999}
   m_Layer: 0
-  m_Name: Star (5)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6367,7 +6372,7 @@ GameObject:
   - component: {fileID: 1156691285}
   - component: {fileID: 1156691284}
   m_Layer: 0
-  m_Name: water
+  m_Name: well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6433,12 +6438,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156691283}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.55, y: -8.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.499996, y: -10.007411, z: -0.9270307}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541160327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160051985
 GameObject:
@@ -6453,7 +6458,7 @@ GameObject:
   - component: {fileID: 1160051988}
   - component: {fileID: 1160051987}
   m_Layer: 0
-  m_Name: Star (20)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6746,7 +6751,7 @@ GameObject:
   - component: {fileID: 1304853779}
   - component: {fileID: 1304853778}
   m_Layer: 0
-  m_Name: Star (15)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7253,7 +7258,7 @@ GameObject:
   - component: {fileID: 1386332999}
   - component: {fileID: 1386332998}
   m_Layer: 0
-  m_Name: Star (2)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7458,7 +7463,7 @@ GameObject:
   - component: {fileID: 1391609027}
   - component: {fileID: 1391609026}
   m_Layer: 0
-  m_Name: Star (11)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7701,7 +7706,7 @@ GameObject:
   - component: {fileID: 1438558452}
   - component: {fileID: 1438558451}
   m_Layer: 0
-  m_Name: Star (23)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7860,7 +7865,7 @@ GameObject:
   - component: {fileID: 1461838901}
   - component: {fileID: 1461838900}
   m_Layer: 0
-  m_Name: Star (22)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8019,7 +8024,7 @@ GameObject:
   - component: {fileID: 1494387973}
   - component: {fileID: 1494387972}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8178,7 +8183,7 @@ GameObject:
   - component: {fileID: 1522287297}
   - component: {fileID: 1522287296}
   m_Layer: 0
-  m_Name: Star
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8337,7 +8342,7 @@ GameObject:
   - component: {fileID: 1524290593}
   - component: {fileID: 1524290592}
   m_Layer: 0
-  m_Name: Star (12)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8674,7 +8679,7 @@ GameObject:
   - component: {fileID: 1593925094}
   - component: {fileID: 1593925093}
   m_Layer: 0
-  m_Name: Star (27)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8833,7 +8838,7 @@ GameObject:
   - component: {fileID: 1613496874}
   - component: {fileID: 1613496873}
   m_Layer: 0
-  m_Name: Star (16)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9038,7 +9043,7 @@ GameObject:
   - component: {fileID: 1640819823}
   - component: {fileID: 1640819822}
   m_Layer: 0
-  m_Name: Star (7)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9194,7 +9199,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661946418}
   m_Layer: 0
-  m_Name: Stars
+  m_Name: Gems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17511,7 +17516,7 @@ GameObject:
   - component: {fileID: 1798739943}
   - component: {fileID: 1798739942}
   m_Layer: 0
-  m_Name: Star (19)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17668,7 +17673,7 @@ GameObject:
   - component: {fileID: 1822295818}
   - component: {fileID: 1822295817}
   m_Layer: 0
-  m_Name: water (1)
+  m_Name: well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17734,12 +17739,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822295816}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.69, y: -8.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.639996, y: -9.927411, z: -0.9270307}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541160327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830791522
 GameObject:
@@ -17754,7 +17759,7 @@ GameObject:
   - component: {fileID: 1830791525}
   - component: {fileID: 1830791524}
   m_Layer: 0
-  m_Name: Star (17)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17913,7 +17918,7 @@ GameObject:
   - component: {fileID: 1836849267}
   - component: {fileID: 1836849266}
   m_Layer: 0
-  m_Name: Star (31)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18122,7 +18127,7 @@ GameObject:
   - component: {fileID: 1904604826}
   - component: {fileID: 1904604825}
   m_Layer: 0
-  m_Name: Star (35)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18334,7 +18339,7 @@ Transform:
   m_GameObject: {fileID: 1946717923}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.08, y: -1.62, z: -9}
+  m_LocalPosition: {x: 100, y: -1.62, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18570,7 +18575,7 @@ GameObject:
   - component: {fileID: 2003951690}
   - component: {fileID: 2003951689}
   m_Layer: 0
-  m_Name: Star (8)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18729,7 +18734,7 @@ GameObject:
   - component: {fileID: 2047998749}
   - component: {fileID: 2047998748}
   m_Layer: 0
-  m_Name: Star (25)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18888,7 +18893,7 @@ GameObject:
   - component: {fileID: 2051266794}
   - component: {fileID: 2051266793}
   m_Layer: 0
-  m_Name: Star (10)
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19147,7 +19152,7 @@ GameObject:
   - component: {fileID: 2129700967}
   - component: {fileID: 2129700966}
   m_Layer: 0
-  m_Name: water (3)
+  m_Name: well
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19213,12 +19218,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129700965}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.9, y: -8.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 68.85, y: -9.927411, z: -0.9270307}
   m_LocalScale: {x: 3, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 541160327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -19226,13 +19231,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 1754240608}
   - {fileID: 318776226}
+  - {fileID: 30668787}
   - {fileID: 904372502}
   - {fileID: 519420032}
-  - {fileID: 30668787}
   - {fileID: 1946717925}
   - {fileID: 147844362}
   - {fileID: 760643912}
-  - {fileID: 1156691285}
-  - {fileID: 1822295818}
-  - {fileID: 563308431}
-  - {fileID: 2129700967}

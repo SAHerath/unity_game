@@ -1,6 +1,7 @@
 using Platformer.Core;
 using Platformer.Mechanics;
 using Platformer.Model;
+using UnityEngine.SceneManagement;
 
 namespace Platformer.Gameplay
 {
@@ -19,6 +20,14 @@ namespace Platformer.Gameplay
         {
             model.player.animator.SetTrigger("victory");
             model.player.controlEnabled = false;
+
+            // Debug.Log("Hooray Level Complete!");
+            int sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            if(sceneIndex < 3)
+            {
+                SceneManager.LoadSceneAsync(sceneIndex + 1); 
+                // SceneManager.LoadScene(sceneIndex + 1); 
+            }
         }
     }
 }

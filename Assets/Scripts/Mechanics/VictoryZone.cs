@@ -16,6 +16,7 @@ namespace Platformer.Mechanics
             {
                 var ev = Schedule<PlayerEnteredVictoryZone>();
                 ev.victoryZone = this;
+                Debug.Log("Hooray Level Complete!");
             }
         }
     }

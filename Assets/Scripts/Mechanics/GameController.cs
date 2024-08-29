@@ -1,6 +1,7 @@
 using Platformer.Core;
 using Platformer.Model;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Platformer.Mechanics
 {
@@ -33,6 +34,17 @@ namespace Platformer.Mechanics
         void Update()
         {
             if (Instance == this) Simulation.Tick();
+        }
+
+
+        public void NextLevel()
+        {
+            SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);  
+        }
+
+        public void LoadScene(string sceneName)
+        {
+            SceneManager.LoadSceneAsync(sceneName);  
         }
     }
 }
