@@ -14,6 +14,7 @@ namespace Platformer.Gameplay
     {
         PlatformerModel model = Simulation.GetModel<PlatformerModel>();
 
+
         public override void Execute()
         {
             var player = model.player;
@@ -24,6 +25,7 @@ namespace Platformer.Gameplay
 
             model.virtualCamera.m_Follow = null;
             model.virtualCamera.m_LookAt = null;
+            // player.GetComponent<Collider>().enabled = false;
             // player.collider.enabled = false;
             player.controlEnabled = false;
 
@@ -31,6 +33,8 @@ namespace Platformer.Gameplay
                 player.audioSource.PlayOneShot(player.ouchAudio);
             player.animator.SetTrigger("hurt");
             player.animator.SetBool("dead", true);
+
+            player.gameOver.Setup(player.token.count);
             Simulation.Schedule<PlayerSpawn>(2);
             Debug.Log("Debug: Game Over!");
         }

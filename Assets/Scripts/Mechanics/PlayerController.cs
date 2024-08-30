@@ -32,6 +32,8 @@ namespace Platformer.Mechanics
         /*internal new*/ public Collider2D collider2d;
         /*internal new*/ public AudioSource audioSource;
         internal Health health;
+        public GameOverUI gameOver;
+        public TokenUI token;
         public bool controlEnabled = true;
 
         bool jump;
