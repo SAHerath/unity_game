@@ -14,6 +14,10 @@ namespace Platformer.Mechanics
     public class TokenInstance : MonoBehaviour
     {
         public AudioClip tokenCollectAudio;
+        public TokenUI tokenUI;
+
+        public int tokenValue = 1;
+        
         [Tooltip("If true, animation will start at a random position in the sequence.")]
         public bool randomAnimationStartTime = false;
         [Tooltip("List of frames that make up the animation.")]
@@ -36,13 +40,17 @@ namespace Platformer.Mechanics
             if (randomAnimationStartTime)
                 frame = Random.Range(0, sprites.Length);
             sprites = idleAnimation;
+            
         }
 
         void OnTriggerEnter2D(Collider2D other)
         {
             //only exectue OnPlayerEnter if the player collides with this token.
             var player = other.gameObject.GetComponent<PlayerController>();
-            if (player != null) OnPlayerEnter(player);
+            if (player != null)
+            {
+                 OnPlayerEnter(player);
+            }
         }
 
         void OnPlayerEnter(PlayerController player)
@@ -53,6 +61,9 @@ namespace Platformer.Mechanics
             sprites = collectedAnimation;
             if (controller != null)
                 collected = true;
+
+            tokenUI.UpdateToken(tokenValue);
+
             //send an event into the gameplay system to perform some behaviour.
             var ev = Schedule<PlayerTokenCollision>();
             ev.token = this;
