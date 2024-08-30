@@ -10,7 +10,7 @@ using TMPro;
     public class TokenUI : MonoBehaviour
     {
         public TextMeshProUGUI textMesh;
-        private int count = 0;
+        public int count = 0;
 
         // Start is called before the first frame update
         // public void Awake()
